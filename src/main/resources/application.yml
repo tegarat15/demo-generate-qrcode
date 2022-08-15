@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: barcode-generator-service
+server:
+  compression:
+    enabled: true
+    mime-types: application/json,application/xml,text/html,text/xml,text/plain
+  port: 69
+  shutdown: graceful
+logging:
+  file:
+    name: logs/image-generator-service.log
+springdoc:
+  swagger-ui:
+    disable-swagger-default-url: true
+    path: /barcode-generator-service.html
